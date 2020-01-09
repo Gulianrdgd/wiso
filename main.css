@@ -3,10 +3,17 @@
     margin: 10% auto 20px;
     display: block;
     vertical-align: middle;
+    max-width:70%;
 }
 
 .homepage {
     margin: 5% 30%;
+    display: block;
+    vertical-align: middle;
+}
+
+.vereniging {
+    margin: 5% 20%;
     display: block;
     vertical-align: middle;
 }
