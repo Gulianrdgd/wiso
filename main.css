@@ -1,9 +1,7 @@
 
 .logo {
-    margin: 10% auto 20px;
     display: block;
     vertical-align: middle;
-    max-width:30%;
 }
 
 .homepage {
@@ -118,9 +116,12 @@
     .homepage {
         margin: 5% 30%;
     }
-    
     .vereniging {
     margin: 5% 20%;
+    }
+    .logo{
+    margin: 10% auto 20px;
+    max-width:30%;
     }
 }
 
@@ -131,5 +132,9 @@
     }
     .vereniging {
     margin: 5% 8%;
+    }
+    .logo{
+    margin: 10% auto 8px;
+    max-width:70%;
     }
 }
