@@ -7,13 +7,11 @@
 }
 
 .homepage {
-    margin: 5% 30%;
     display: block;
     vertical-align: middle;
 }
 
 .vereniging {
-    margin: 5% 20%;
     display: block;
     vertical-align: middle;
 }
@@ -114,4 +112,24 @@
     width: 100%;
     text-align: left;
   }
+}
+
+@media screen and (min-width: 601px) {
+    .homepage {
+        margin: 5% 30%;
+    }
+    
+    .vereniging {
+    margin: 5% 20%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .homepage {
+        margin: 5% 8%;
+    }
+    .vereniging {
+    margin: 5% 8%;
+    }
 }
