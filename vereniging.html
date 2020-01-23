@@ -14,31 +14,31 @@ body {font-family: "Lato", sans-serif}
 <body>
 
 <!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="./dokuwiki/doku.php" class="w3-bar-item w3-button w3-padding-large w3-hide-small">WIKI</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">VERENIGINGEN <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="vereniging.html?vereniging=Abacus" class="w3-bar-item w3-button">Abacus</a>
-        <a href="vereniging.html?vereniging=A-es" class="w3-bar-item w3-button">A-Eskwadraat</a>
-        <a href="vereniging.html?vereniging=CH" class="w3-bar-item w3-button">Christiaan Huygens</a>
-        <a href="vereniging.html?vereniging=Cover" class="w3-bar-item w3-button">Cover</a>
-        <a href="vereniging.html?vereniging=DLF" class="w3-bar-item w3-button">De Leidsche Flesch</a>
-        <a href="vereniging.html?vereniging=DESDA" class="w3-bar-item w3-button">DESDA</a>
-        <a href="vereniging.html?vereniging=FMF" class="w3-bar-item w3-button">FMF</a>
-        <a href="vereniging.html?vereniging=GEWIS" class="w3-bar-item w3-button">GEWIS</a>
-        <a href="vereniging.html?vereniging=IA" class="w3-bar-item w3-button">Inter-<i>actief</i></a>
-        <a href="vereniging.html?vereniging=NSA" class="w3-bar-item w3-button">NSA</a>
-        <a href="vereniging.html?vereniging=Sticky" class="w3-bar-item w3-button">Sticky</a>
-        <a href="vereniging.html?vereniging=STORM" class="w3-bar-item w3-button">STORM</a>
-        <a href="vereniging.html?vereniging=Thalia" class="w3-bar-item w3-button">Thalia</a>
-        <a href="vereniging.html?vereniging=VIA" class="w3-bar-item w3-button">Via</a>
-      </div>
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="./dokuwiki/doku.php">WIKI</a>
+  <div class="dropdown">
+    <button class="dropbtn">Verenigingen 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a href="vereniging.html?vereniging=Abacus" >Abacus</a>
+        <a href="vereniging.html?vereniging=A-es">A-Eskwadraat</a>
+        <a href="vereniging.html?vereniging=CH">Christiaan Huygens</a>
+        <a href="vereniging.html?vereniging=Cover">Cover</a>
+        <a href="vereniging.html?vereniging=DLF">De Leidsche Flesch</a>
+        <a href="vereniging.html?vereniging=DESDA">DESDA</a>
+        <a href="vereniging.html?vereniging=FMF">FMF</a>
+        <a href="vereniging.html?vereniging=GEWIS">GEWIS</a>
+        <a href="vereniging.html?vereniging=IA">Inter-<i>actief</i></a>
+        <a href="vereniging.html?vereniging=NSA">NSA</a>
+        <a href="vereniging.html?vereniging=Sticky">Sticky</a>
+        <a href="vereniging.html?vereniging=STORM">STORM</a>
+        <a href="vereniging.html?vereniging=Thalia">Thalia</a>
+        <a href="vereniging.html?vereniging=VIA">Via</a>
     </div>
-  </div>
+  </div> 
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
     
 
@@ -47,4 +47,15 @@ body {font-family: "Lato", sans-serif}
     <p id="text">404 not found</p>
 </div>
 <script type="text/javascript" src= "verenigingen.js"></script>
+<script>
+function myFunction() {
+    console.log("hello");
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
 </body>
